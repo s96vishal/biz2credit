@@ -12,6 +12,7 @@ if(process.env.ENV === 'development'){
     app.use(morgan('dev'));
 }
 app.use(cors());
+app.enable('trust proxy');
 app.use(express.json());
 app.use(express.static(path.join(__dirname,'public')));
 
