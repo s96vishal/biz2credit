@@ -11,6 +11,8 @@ let apiHit =0;
 if(process.env.ENV === 'development'){
     app.use(morgan('dev'));
 }
+console.log('Vishal here ');
+
 // app.use(cors());
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
