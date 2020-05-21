@@ -7,5 +7,6 @@ router.route('/')
     .post(ispController.addIspProvider)
 
 router.get('/:id',ispController.getIsp);
+console.log("Added console.log");
 
 module.exports = router;
